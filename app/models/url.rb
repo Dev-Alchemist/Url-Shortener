@@ -22,7 +22,7 @@ class Url < ApplicationRecord
   end
 
   def short_url
-    Rails.application.routes.url_helpers.redirect_url(shortcode: short_code, allow_other_host: true, host: 'localhost', port: 3000)
+    Rails.application.routes.url_helpers.redirect_url(shortcode: short_code, host: 'localhost', port: 3000)
   end
 end
 
