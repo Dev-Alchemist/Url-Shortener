@@ -50,7 +50,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   username: postgresName
-  password: databaseName
+  password: PostgresdatabasePassword
   host: localhost
 ```
 
