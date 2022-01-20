@@ -1,0 +1,43 @@
+<div class="container-fluid">
+<h1>Visitors Analytics</h1>
+<div class="top-stat">
+<p>
+<strong>Total visits: </strong>
+<%= @total_click_count %>
+</p>
+<p>
+<strong>Total Unique visits: </strong>
+<%= @total_unique_visitors %>
+</p>
+</div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>S/No</th>
+      <th>IP address</th>
+      <th>Click count</th>
+      <th>Last visit</th>
+      <th>Short Url</th>
+      <th>Original Url</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @visitors.each_with_index do |visitor, index| %>
+    <tr>
+      <td scope="row"><%= index + 1 %></td>
+      <td><%= visitor.ip %></td>
+      <td><%= visitor.click_count %></td>
+      <td><%= visitor.last_visit %></td>
+      <td><%= visitor.url.short_url %></td>
+      <td><%= visitor.url.long_url %></td>
+      <td></td>
+    </tr>
+<%end%>
+  </tbody>
+</table>
+
+<%= link_to 'Home', root_path %>
+
+</div>
