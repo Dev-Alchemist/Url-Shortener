@@ -107,5 +107,4 @@ http://localhost:3000/:shortcode/stat
 
 # Additional Information
 
-I took this project with minimal knowledge on Ruby on Rails and gained a ton of information. I'm yet to perfect testing with Rspec(BDD) approach and on the framework itself. Also the redirection works by using the original url `allow_other_host: true` in our controller otherwise we receive an error. My assumption is that for the service to work we require a hosted service to attach the dynamic generated urls such as `bit` service.
-
+I took this project with minimal knowledge on Ruby on Rails and gained a ton of information. I'm yet to perfect testing with Rspec(BDD) approach and on the framework itself. My first approach to this project was to first understand the problem to be solved by the feature, after that I came up with a system design of how the various parts would be coming together. Once this was done I set up the project on my local machine. 
